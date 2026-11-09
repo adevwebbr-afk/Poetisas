@@ -277,6 +277,9 @@
   .inline-flex {
     display: inline-flex;
   }
+  .table {
+    display: table;
+  }
   .h-2 {
     height: calc(var(--spacing) * 2);
   }
@@ -361,8 +364,14 @@
   .flex-1 {
     flex: 1;
   }
+  .flex-shrink {
+    flex-shrink: 1;
+  }
   .shrink-0 {
     flex-shrink: 0;
+  }
+  .border-collapse {
+    border-collapse: collapse;
   }
   .rotate-3 {
     rotate: 3deg;
@@ -372,6 +381,9 @@
   }
   .transform {
     transform: var(--tw-rotate-x, ) var(--tw-rotate-y, ) var(--tw-rotate-z, ) var(--tw-skew-x, ) var(--tw-skew-y, );
+  }
+  .resize {
+    resize: both;
   }
   .resize-none {
     resize: none;
@@ -399,6 +411,9 @@
   }
   .justify-center {
     justify-content: center;
+  }
+  .gap-1 {
+    gap: var(--spacing);
   }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
@@ -517,9 +532,6 @@
   .bg-\[\#1e293b\] {
     background-color: #1e293b;
   }
-  .bg-\[\#c8a278\] {
-    background-color: #c8a278;
-  }
   .bg-\[\#d97706\] {
     background-color: #d97706;
   }
@@ -537,9 +549,6 @@
   }
   .bg-\[\#f2dacf\]\/40 {
     background-color: color-mix(in oklab, #f2dacf 40%, transparent);
-  }
-  .bg-\[\#f2dacf\]\/70 {
-    background-color: color-mix(in oklab, #f2dacf 70%, transparent);
   }
   .bg-neutral-900 {
     background-color: var(--color-neutral-900);
@@ -720,6 +729,9 @@
   .not-italic {
     font-style: normal;
   }
+  .underline {
+    text-decoration-line: underline;
+  }
   .opacity-8 {
     opacity: 8%;
   }
@@ -765,6 +777,10 @@
     --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
+  }
   .transition-all {
     transition-property: all;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
@@ -787,9 +803,6 @@
   .duration-500 {
     --tw-duration: 500ms;
     transition-duration: 500ms;
-  }
-  .placeholder\:text-neutral-700::placeholder {
-    color: var(--color-neutral-700);
   }
   @media (hover: hover) {
     .hover\:translate-x-\[1px\]:hover {
@@ -857,9 +870,6 @@
   .focus\:ring-2:focus {
     --tw-ring-shadow: var(--tw-ring-inset, ) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-  .focus\:ring-\[\#1e110a\]:focus {
-    --tw-ring-color: #1e110a;
   }
   .focus\:ring-\[\#d97706\]:focus {
     --tw-ring-color: #d97706;
@@ -956,6 +966,9 @@
     }
     .sm\:gap-3 {
       gap: calc(var(--spacing) * 3);
+    }
+    .sm\:gap-4 {
+      gap: calc(var(--spacing) * 4);
     }
     .sm\:gap-6 {
       gap: calc(var(--spacing) * 6);
@@ -1219,6 +1232,11 @@
   inherits: false;
   initial-value: 0 0 #0000;
 }
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @property --tw-duration {
   syntax: "*";
   inherits: false;
@@ -1280,6 +1298,7 @@
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
+      --tw-outline-style: solid;
       --tw-duration: initial;
       --tw-translate-x: 0;
       --tw-translate-y: 0;

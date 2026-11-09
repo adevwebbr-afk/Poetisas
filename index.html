@@ -297,5 +297,100 @@
 
     </div>
   </section>
+
+  <!-- FOOTER / RODAPÉ EXCLUSIVO DO PROJETO -->
+  <footer class="w-full bg-[#1e110a] text-[#f2dacf] pt-16 pb-10 px-4 sm:px-6 md:px-16 border-t-2 border-[#f2dacf]/20 relative overflow-hidden">
+    <div class="max-w-6xl mx-auto space-y-16">
+      
+      <!-- 1. ÁREA DE APOIO E REALIZAÇÃO (Logos em Flexbox) -->
+      <div class="bg-[#f2dacf] text-[#1e110a] border-2 border-[#1e110a] p-8 shadow-[8px_8px_0px_0px_#d97706] transition-all duration-300">
+        <div class="text-center mb-8">
+          <span class="inline-block w-12 h-[2px] bg-[#d97706] mb-2"></span>
+          <h3 class="text-xl sm:text-2xl font-bold tracking-wider uppercase" style="font-family: 'Jackson Xilogravura';">
+            Apoio e Realização 
+          </h3>
+        </div>
+
+        <!-- Container das Logos em Flexbox Responsivo -->
+        <div class="flex flex-wrap items-center justify-center gap-8 md:gap-12 opacity-90">
+          <!-- Logo 1: CNPq -->
+          <div class="flex items-center justify-center p-2 transition-transform hover:scale-105">
+            <img src="frontend/public/image/CNPq.png" alt="CNPq" class="h-12 sm:h-14 md:h-16 w-auto object-contain">
+          </div>
+          <!-- Logo 2: ACVPB -->
+          <div class="flex items-center justify-center p-2 transition-transform hover:scale-105">
+            <img src="frontend/public/image/ACVPB.png" alt="ACVPB" class="h-12 sm:h-14 md:h-16 w-auto object-contain">
+          </div>
+          <!-- Logo 3: DCI UFPB -->
+          <div class="flex items-center justify-center p-2 transition-transform hover:scale-105">
+            <img src="frontend/public/image/DCI.png" alt="Departamento de Ciência da Informação UFPB" class="h-12 sm:h-14 md:h-16 w-auto object-contain">
+          </div>
+          <!-- Logo 4: PPGCI -->
+          <div class="flex items-center justify-center p-2 transition-transform hover:scale-105">
+            <img src="frontend/public/image/PPGCI.png" alt="PPGCI UFPB" class="h-12 sm:h-14 md:h-16 w-auto object-contain">
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. NAVEGAÇÃO E IDENTIDADE DO RODAPÉ -->
+      <div class="flex flex-col lg:flex-row items-center justify-between gap-8 pb-10 border-b border-[#f2dacf]/15 text-center lg:text-left">
+        
+        <!-- Identidade -->
+        <div class="space-y-2">
+          <h4 class="text-lg sm:text-xl font-bold tracking-wide text-[#f2dacf]" style="font-family: 'Jackson Xilogravura';">
+            Memórias das Poetisas da Literatura de Cordel
+          </h4>
+          <p class="text-xs text-[#f2dacf]/70 max-w-sm" style="font-family: 'Jackson Xilogravura';">
+            Preservando a voz, a força e a arte das mulheres no sertão e no Brasil.
+          </p>
+        </div>
+
+        <!-- Links de Navegação em Flex -->
+        <nav class="flex flex-wrap justify-center lg:justify-end items-center gap-6">
+          <a href="index.html" class="text-xs font-bold uppercase tracking-widest text-[#f2dacf] hover:text-[#d97706] transition-colors" style="font-family: 'Jackson Xilogravura';">
+            Início
+          </a>
+          <a href="sobre.html" class="text-xs font-bold uppercase tracking-widest text-[#f2dacf] hover:text-[#d97706] transition-colors" style="font-family: 'Jackson Xilogravura';">
+            Sobre
+          </a>
+          <a href="biografias.html" class="text-xs font-bold uppercase tracking-widest text-[#f2dacf] hover:text-[#d97706] transition-colors" style="font-family: 'Jackson Xilogravura';">
+            Biografias
+          </a>
+          <a href="contato.html" class="text-xs font-bold uppercase tracking-widest text-[#f2dacf] hover:text-[#d97706] transition-colors" style="font-family: 'Jackson Xilogravura';">
+            Contato
+          </a>
+        </nav>
+
+      </div>
+
+      <!-- 3. CRÉDITOS E DESENVOLVEDORES -->
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#f2dacf]/60" style="font-family: 'Jackson Xilogravura';">
+        
+            <!-- Copyright -->
+            <p>&copy; 2026 Memórias das Poetisas da Literatura de Cordel. Todos os direitos reservados.</p>
+
+            <!-- Créditos da Equipe de Desenvolvimento -->
+        <div class="flex flex-wrap items-center gap-3 sm:gap-4 bg-[#f2dacf]/10 border border-[#f2dacf]/30 px-4 py-2 text-[11px]" style="font-family: 'Jackson Xilogravura';">
+          <span class="text-[#d97706] font-bold">&lt;/&gt;</span>
+            
+          <div class="flex items-center gap-3">
+            <!-- Link Front-end -->
+            <a href="https://seu-portfolio-front.com" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1 hover:text-[#d97706] transition-colors">
+              <strong class="text-[#f2dacf]">Front:</strong>
+              <span>Anderson Matheus</span>
+            </a>
+
+            <span class="opacity-40">|</span>
+
+           <!-- Link Back-end -->
+            <a href="https://seu-portfolio-back.com" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1 hover:text-[#d97706] transition-colors">
+              <strong class="text-[#f2dacf]">Back:</strong>
+              <span>Miguel Barros</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
   </body>
 </html>
