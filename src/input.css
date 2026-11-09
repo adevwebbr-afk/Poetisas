@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+/*Importando fonte de Jackson*/
+@font-face {
+    font-family: "Jackson Xilogravura";
+    src: url("/frontend/public/fonts/JacksonXilogravura-Regular.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
