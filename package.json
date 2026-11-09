@@ -1,0 +1,25 @@
+{
+  "name": "poetisas",
+  "version": "1.0.0",
+  "description": "O projeto tem como propósito valorizar e divulgar a cultura nordestina por meio da poesia e das rimas, dando voz ao humor, às histórias, às tradições e aos acontecimentos históricos e atuais da região. Uma iniciativa que busca entreter, informar e preservar a riqueza cultural do Nordeste através da expressão poética",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndersonDevJava/Poetisas.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/AndersonDevJava/Poetisas/issues"
+  },
+  "homepage": "https://github.com/AndersonDevJava/Poetisas#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.5",
+    "tailwindcss": "^4.3.5"
+  }
+}
