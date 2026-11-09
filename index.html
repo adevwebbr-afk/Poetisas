@@ -111,5 +111,75 @@
 
       </div>
     </section>
+
+    <!-- Seção Prantos e Cantos do Cordel -->
+  <section class="w-full py-12 md:py-20 px-4 sm:px-6 md:px-16 bg-[#f2dacf] relative overflow-hidden">
+    
+    <div class="max-w-5xl mx-auto relative">
+      
+      <!-- Cabeçalho da Seção: Título à esquerda e Espaço para Imagem no Canto Superior Direito -->
+      <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6 mb-10 pb-6 border-b-2 border-neutral-900/20">
+        
+        <!-- Título -->
+        <div>
+          <div class="flex items-center gap-2 text-xs font-bold tracking-widest text-[#d97706] uppercase mb-2" style="font-family: 'Jackson Xilogravura';">
+            <span class="w-6 h-[2px] bg-[#d97706]"></span>
+            Tradição e Verso
+          </div>
+          <h2 class="text-3xl md:text-4xl lg:text-5xl text-neutral-900 font-bold" style="font-family: 'Jackson Xilogravura';">
+            Prantos e cantos do cordel
+          </h2>
+        </div>
+
+        <!-- Espaço reservado para a Imagem no Canto Superior Direito -->
+        <div class="w-28 h-28 sm:w-24 sm:h-24 md:w-28 md:h-28 flex items-center justify-center p-2 self-end sm:self-auto shrink-0">
+          <img src="frontend/public/image/siteWix11.png" alt="Imagem Decorativa Superior Direita" class="w-full h-full object-contain">
+        </div>
+
+      </div>
+
+      <!-- Container Principal do Carrossel / Card de Poema -->
+       
+      <div class="bg-white border-2 border-neutral-900 p-6 sm:p-10 md:p-12 shadow-[8px_8px_0px_0px_#1e293b] relative">
+        
+        <!-- Conteúdo do Slide Ativo (Exemplo Slide 3 do original) -->
+        <div class="min-h-[180px] sm:min-h-[160px] flex flex-col justify-around ">
+          <blockquote class="text-base sm:text-lg md:text-xl text-neutral-800 italic leading-relaxed text-center md:text-left mb-6" style="font-family: 'Jackson Xilogravura';">
+              &ldquo;Na viola do destino<br class="hidden sm:inline">
+              A mulher dedilha o som<br class="hidden sm:inline">
+              Transformando em poesia<br class="hidden sm:inline">
+              A beleza de um dom<br class="hidden sm:inline">
+              Bordando a nossa história<br class="hidden sm:inline">
+              Com capricho e com tom.&rdquo;
+          </blockquote>
+          
+          <cite class="not-italic text-xs sm:text-sm font-bold tracking-wider text-[#d97706] uppercase block text-center md:text-right" style="font-family: 'Jackson Xilogravura';">
+            &mdash; Herança Cordelista
+          </cite>
+        </div>
+
+        <!-- Barra Inferior: Controles e Paginação (Dots) Reposicionados -->
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-4 mt-8 pt-6 border-t border-neutral-200">
+          
+          <!-- Indicadores (Dots) -->
+          <div class="flex items-center gap-2">
+            <button class="w-3 h-3 rounded-full border-2 border-neutral-900 bg-transparent transition-colors hover:bg-neutral-900" aria-label="Ir para poema 1"></button>
+            <button class="w-3 h-3 rounded-full border-2 border-neutral-900 bg-transparent transition-colors hover:bg-neutral-900" aria-label="Ir para poema 2"></button>
+            <button class="w-6 h-3 rounded-full border-2 border-neutral-900 bg-[#d97706] transition-colors" aria-label="Ir para poema 3"></button>
+          </div>
+
+          <!-- Botões de Navegação (Setas modernizadas ao lado) -->
+          <div class="flex items-center gap-3">
+            <button class="w-10 h-10 flex items-center justify-center bg-white text-neutral-900 border-2 border-neutral-900 font-bold shadow-[3px_3px_0px_0px_#1e293b] transition-all hover:translate-x-[1px] hover:translate-y-[1px] hover:shadow-[1px_1px_0px_0px_#1e293b] active:translate-x-[3px] active:translate-y-[3px] active:shadow-none" aria-label="Poema anterior">
+              ‹
+            </button>
+            <button class="w-10 h-10 flex items-center justify-center bg-[#1e293b] text-white border-2 border-neutral-900 font-bold shadow-[3px_3px_0px_0px_#1e293b] transition-all hover:translate-x-[1px] hover:translate-y-[1px] hover:shadow-[1px_1px_0px_0px_#1e293b] active:translate-x-[3px] active:translate-y-[3px] active:shadow-none" aria-label="Próximo poema">
+              ›
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   </body>
 </html>
