@@ -14,26 +14,102 @@
   </style>
   <body class="bg-[#dfcfc0]">
     <header class="p-2">
-      <!--  Jackson Xilogravura  -->
-      <div class=" flex justify-between items-center w-[70%] mx-auto">
-        <a href="index.html" class="flex gap-6">
-          <img src="frontend/public/image/poetisaHeader.png" alt="Imagem Poetisa Header">
-          <div>
-            <h2  class="text-2xl" style="font-family: Jackson Xilogravura">Memórias das Poetisas</h2>
-            <p class="text-sm text-center font-semibold">DA LITERATURA DE CORDEL</p>
-          </div>
+
+      <!-- Menu desktop -->
+      <div class="hidden md:flex justify-between items-center w-[70%] mx-auto">
+
+        <!-- Logo / Título -->
+        <a href="index.html" class="flex flex-col">
+          <h2
+            class="text-lg"
+            style="font-family: Jackson Xilogravura"
+          >
+            Memórias das Poetisas
+          </h2>
+
+          <p class="text-[10px] text-center font-semibold">
+            DA LITERATURA DE CORDEL
+          </p>
         </a>
 
-      <nav style="font-family: Jackson Xilogravura " style="font-display: swap">
-        <ul class="flex justify-center gap-5 text-sm font-arial">
-            <li class="px-3 py-2 rounded-full transition-colors duration-300 hover:bg-white/60">INICIO</li>
-            <li class="px-3 py-2 rounded-full transition-colors duration-300 hover:bg-white/60">SOBRE</li>
-            <li class="px-3 py-2 rounded-full transition-colors duration-300 hover:bg-white/60">BIOGRAFIAS</li>
-            <li class="px-3 py-2 rounded-full transition-colors duration-300 hover:bg-white/60">CATÁLOGO</li>
-            <li class="px-3 py-2 rounded-full transition-colors duration-300 hover:bg-white/60">CONTATO</li>
+        <!-- Navegação desktop -->
+        <nav style="font-family: Jackson Xilogravura; font-display: swap">
+          <ul class="flex justify-center gap-5 text-sm font-arial">
+            <li class="px-3 py-2 rounded-full transition-colors duration-300 hover:bg-white/60">
+              <a href="index.html">INÍCIO</a>
+            </li>
+
+            <li class="px-3 py-2 rounded-full transition-colors duration-300 hover:bg-white/60">
+              <a href="sobre.html">SOBRE</a>
+            </li>
+
+            <li class="px-3 py-2 rounded-full transition-colors duration-300 hover:bg-white/60">
+              <a href="biografias.html">BIOGRAFIAS</a>
+            </li>
+
+            <li class="px-3 py-2 rounded-full transition-colors duration-300 hover:bg-white/60">
+              <a href="catalogo.html">CATÁLOGO</a>
+            </li>
+
+            <li class="px-3 py-2 rounded-full transition-colors duration-300 hover:bg-white/60">
+              <a href="contato.html">CONTATO</a>
+            </li>
           </ul>
         </nav>
+
       </div>
+      
+      <!-- Cabeçalho mobile -->
+       <div class="flex md:hidden justify-between items-center px-2">
+
+        <!-- Frase da poetisa -->
+        <p class="text-xs font-semibold"
+          style="font-family: Jackson Xilogravura">
+          Versos que eternizam a voz das mulheres
+        </p>
+
+        <!-- Botão dropdown -->
+        <button
+          id="menu-btn"
+          class="flex flex-col gap-1.5 p-2"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <span class="w-5 h-[1px] bg-current"></span>
+          <span class="w-5 h-[1px] bg-current"></span>
+          <span class="w-5 h-[1px] bg-current"></span>
+        </button>
+      </div>
+      
+      <!-- Dropdown mobile -->
+      <nav
+        id="mobile-menu"
+        class="hidden md:hidden mt-3"
+        style="font-family: Jackson Xilogravura"
+      >
+        <ul class="flex flex-col text-center text-sm">
+          <li class="py-3">
+            <a href="index.html">INÍCIO</a>
+          </li>
+
+          <li class="py-3">
+            <a href="sobre.html">SOBRE</a>
+          </li>
+
+          <li class="py-3">
+            <a href="biografias.html">BIOGRAFIAS</a>
+          </li>
+
+          <li class="py-3">
+            <a href="catalogo.html">CATÁLOGO</a>
+          </li>
+
+          <li class="py-3">
+            <a href="contato.html">CONTATO</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <hr>
 
@@ -131,10 +207,10 @@
           </h2>
         </div>
 
-          <!-- Imagem escondida no mobile (aparece de 'md' em diante) -->
-          <div class="hidden md:flex w-28 h-28 items-center justify-center p-2 shrink-0">
-            <img src="frontend/public/image/siteWix11.png" alt="Imagem Decorativa" class="w-full h-full object-contain">
-          </div>
+        <!-- Espaço reservado para a Imagem no Canto Superior Direito -->
+        <div class="w-28 h-28 sm:w-24 sm:h-24 md:w-28 md:h-28 flex items-center justify-center p-2 self-end sm:self-auto shrink-0">
+          <img src="frontend/public/image/siteWix11.png" alt="Imagem Decorativa Superior Direita" class="w-full h-full object-contain">
+        </div>
 
       </div>
 
