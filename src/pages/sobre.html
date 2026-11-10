@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../output.css" rel="stylesheet" />
+    <title>Sobre</title>
+</head>
+<body class="bg-[#f3e1d7]">
+    <header class="p-2">
+
+      <!-- Menu desktop -->
+      <div class="hidden md:flex justify-between items-center w-[70%] mx-auto">
+
+        <!-- Logo / Título -->
+        <a href="index.html" class="flex flex-col">
+          <h2
+            class="text-xl"
+            style="font-family: Jackson Xilogravura"
+          >
+            Conheça sobre o projeto poetisas
+          </h2>
+        </a>
+
+        <!-- Navegação desktop -->
+        <nav style="font-family: Jackson Xilogravura; font-display: swap">
+          <ul class="flex justify-center gap-5 text-sm font-arial">
+            <li class="px-3 py-2 rounded-full transition-colors duration-300 hover:bg-white/60">
+              <a href="../../index.html">INÍCIO</a>
+            </li>
+
+            <li class="px-3 py-2 rounded-full transition-colors duration-300 hover:bg-white/60">
+              <a href="sobre.html">SOBRE</a>
+            </li>
+
+            <li class="px-3 py-2 rounded-full transition-colors duration-300 hover:bg-white/60">
+              <a href="biografias.html">BIOGRAFIAS</a>
+            </li>
+
+            <li class="px-3 py-2 rounded-full transition-colors duration-300 hover:bg-white/60">
+              <a href="catalogo.html">CATÁLOGO</a>
+            </li>
+
+            <li class="px-3 py-2 rounded-full transition-colors duration-300 hover:bg-white/60">
+              <a href="contato.html">CONTATO</a>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+      
+      <!-- Cabeçalho mobile -->
+       <div class="flex md:hidden justify-between items-center px-2">
+
+        <!-- Frase da poetisa -->
+        <p class="text-xs font-semibold"
+          style="font-family: Jackson Xilogravura">
+          Versos que eternizam a voz das mulheres
+        </p>
+
+        <!-- Botão dropdown -->
+        <button
+          id="menu-btn"
+          class="flex flex-col gap-1.5 p-2"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <span class="w-5 h-[1px] bg-current"></span>
+          <span class="w-5 h-[1px] bg-current"></span>
+          <span class="w-5 h-[1px] bg-current"></span>
+        </button>
+      </div>
+      
+      <!-- Dropdown mobile -->
+      <nav
+        id="mobile-menu"
+        class="hidden md:hidden mt-3"
+        style="font-family: Jackson Xilogravura"
+      >
+        <ul class="flex flex-col text-center text-sm">
+          <li class="py-3">
+            <a href="index.html">INÍCIO</a>
+          </li>
+
+          <li class="py-3">
+            <a href="sobre.html">SOBRE</a>
+          </li>
+
+          <li class="py-3">
+            <a href="biografias.html">BIOGRAFIAS</a>
+          </li>
+
+          <li class="py-3">
+            <a href="catalogo.html">CATÁLOGO</a>
+          </li>
+
+          <li class="py-3">
+            <a href="contato.html">CONTATO</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <hr>
+
+    <section class="relative overflow-hidden bg-[#f2dacf] text-[#1e110a] py-24 px-6 sm:px-10 lg:px-20 border-t border-[#1e110a]/10">
+        
+        <!-- Imagem de fundo sutil (Bandeira central decorativa com baixa opacidade) -->
+        <img class="absolute inset-0 m-auto w-3/4 max-w-4xl object-contain opacity-10 pointer-events-none z-0" src="../../frontend/public/images/bandeiraCurvaSemFundo.png" alt="Detalhe decorativo de fundo">
+
+        <!-- Container Principal com controle de camada z-10 -->
+        <div class="relative z-10 max-w-7xl mx-auto">
+
+            <!-- CABEÇALHO DA SEÇÃO -->
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14 border-b border-[#1e110a]/20 pb-8">
+                <div>
+                    <span class="text-xs sm:text-sm uppercase tracking-[0.3em] font-semibold text-[#d97706]">
+                        01 — Nossa pesquisa
+                    </span>
+                    <h2 class="text-4xl sm:text-6xl mt-3 font-bold tracking-tight text-[#1e110a]" style="font-family: 'Jackson Xilogravura';">
+                        Sobre o Projeto
+                    </h2>
+                </div>
+                <p class="max-w-md text-sm sm:text-base leading-relaxed text-[#1e110a]/80 font-medium">
+                    Um registro dedicado à memória, à história e à expressão feminina na literatura popular brasileira.
+                </p>
+            </div>
+
+            <!-- CONTEÚDO EDITORIAL (GRID DE 6 BLOCOS) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-10 py-6">
+
+                <!-- TEXTO 01 -->
+                <article class="relative pl-12 group">
+                    <span class="absolute left-0 top-0 text-3xl font-bold text-[#d97706]/70 transition-colors group-hover:text-[#d97706]" style="font-family: 'Jackson Xilogravura';">01</span>
+                    <p class="leading-relaxed text-justify text-sm sm:text-base text-[#1e110a]/90">
+                        Esta iniciativa reúne esforços de cinco Grupos de Pesquisa registrados no CNPq, juntamente com outras instituições, para investigar e documentar manifestações da cultura popular, reconhecendo a riqueza de suas produções literárias e a permanência de tradições construídas ao longo do tempo.
+                    </p>
+                </article>
+
+                <!-- TEXTO 02 -->
+                <article class="relative pl-12 group">
+                    <span class="absolute left-0 top-0 text-3xl font-bold text-[#d97706]/70 transition-colors group-hover:text-[#d97706]" style="font-family: 'Jackson Xilogravura';">02</span>
+                    <p class="leading-relaxed text-justify text-sm sm:text-base text-[#1e110a]/90">
+                        O estudo busca compreender a pluralidade cultural do Brasil, contribuindo para a conservação da memória coletiva e para o reconhecimento das mulheres que produziram literatura popular. Também investiga suas trajetórias, obras e temáticas, ampliando as discussões no campo da Ciência da Informação.
+                    </p>
+                </article>
+
+                <!-- TEXTO 03 -->
+                <article class="relative pl-12 group">
+                    <span class="absolute left-0 top-0 text-3xl font-bold text-[#d97706]/70 transition-colors group-hover:text-[#d97706]" style="font-family: 'Jackson Xilogravura';">03</span>
+                    <p class="leading-relaxed text-justify text-sm sm:text-base text-[#1e110a]/90">
+                        Parte-se do entendimento de que, mesmo diante das transformações sociais, a presença feminina na literatura de cordel ainda recebe reconhecimento insuficiente, permanecendo sujeita a processos históricos de apagamento e pouca divulgação de suas autoras e produções.
+                    </p>
+                </article>
+
+                <!-- TEXTO 04 -->
+                <article class="relative pl-12 group">
+                    <span class="absolute left-0 top-0 text-3xl font-bold text-[#d97706]/70 transition-colors group-hover:text-[#d97706]" style="font-family: 'Jackson Xilogravura';">04</span>
+                    <p class="leading-relaxed text-justify text-sm sm:text-base text-[#1e110a]/90">
+                        Como propósito central, a pesquisa pretende identificar e organizar a produção poética desenvolvida por mulheres na literatura de cordel, fortalecendo a divulgação de suas autoras e ampliando o acesso às suas contribuições culturais.
+                    </p>
+                </article>
+
+                <!-- TEXTO 05 -->
+                <article class="relative pl-12 group">
+                    <span class="absolute left-0 top-0 text-3xl font-bold text-[#d97706]/70 transition-colors group-hover:text-[#d97706]" style="font-family: 'Jackson Xilogravura';">05</span>
+                    <p class="leading-relaxed text-justify text-sm sm:text-base text-[#1e110a]/90">
+                        A investigação considera os contextos históricos e as diferentes épocas relacionadas ao objeto estudado, apoiando-se em registros e evidências documentais, conforme a perspectiva de Aróstegui (2006, p. 468), para reconstruir a trajetória da produção literária das cordelistas brasileiras.
+                    </p>
+                </article>
+
+                <!-- TEXTO 06 -->
+                <article class="relative pl-12 group">
+                    <span class="absolute left-0 top-0 text-3xl font-bold text-[#d97706]/70 transition-colors group-hover:text-[#d97706]" style="font-family: 'Jackson Xilogravura';">06</span>
+                    <p class="leading-relaxed text-justify text-sm sm:text-base text-[#1e110a]/90">
+                        As obras serão analisadas considerando seus formatos, finalidades, públicos e conteúdos, compreendendo os documentos como registros fundamentais de memória e história. Para isso, será adotada uma abordagem qualitativa, baseada na pesquisa documental.
+                    </p>
+                </article>
+
+            </div>
+
+            <!-- ENCERRAMENTO DA SEÇÃO -->
+            <div class="border-t border-[#1e110a]/20 mt-16 pt-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs sm:text-sm uppercase tracking-widest text-[#1e110a]/70">
+                <span>Memória • Cultura • Literatura</span>
+                <span class="text-2xl font-bold text-[#1e110a]" style="font-family: 'Jackson Xilogravura';">
+                    2026
+                </span>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="relative overflow-hidden bg-[#f2dacf] text-[#1e110a] py-24 px-6 sm:px-10 lg:px-20 border-t border-[#1e110a]/10">
+        
+        <!-- Imagem de fundo sutil (Marca d'água decorativa opcional) -->
+        <img class=" -mt-20 inset-0 m-auto w-3/4 max-w-4xl object-contain opacity-5 pointer-events-none z-0" src="../../frontend/public/images/siteWix9.png" alt="Detalhe decorativo">
+
+        <!-- Container Principal -->
+        <div class="relative z-10 max-w-7xl mx-auto">
+
+            <!-- CABEÇALHO DA SEÇÃO -->
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs sm:text-sm uppercase tracking-[0.3em] font-semibold text-[#d97706]">
+                    02 — Quem faz acontecer
+                </span>
+                <h2 class="text-4xl sm:text-5xl mt-3 font-bold tracking-tight text-[#1e110a]" style="font-family: 'Jackson Xilogravura';">
+                    Equipe do Projeto
+                </h2>
+                <div class="w-16 h-1 bg-[#d97706] mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <!-- GRID DE CARDS DA EQUIPE (Responsivo: 1 col mobile, 2 cols tablet, 4 cols desktop) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                <!-- Card 1 — Coordenadora -->
+                <div class="group relative bg-[#fdf8f5] border border-[#1e110a]/10 rounded-2xl p-6 flex flex-col items-center text-center shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                    <!-- Foto Placeholder com Degradê Elegante -->
+                    <div class="w-24 h-24 rounded-xl bg-gradient-to-br from-[#d97706] to-[#b45309] text-white flex items-center justify-center text-2xl font-bold tracking-widest shadow-md mb-5 group-hover:scale-105 transition-transform duration-300" style="font-family: 'Jackson Xilogravura';">
+                        ME
+                    </div>
+                    <h3 class="text-base font-bold text-[#1e110a] mb-2 leading-snug">
+                        Profa. Dra. Maria Elizabeth Baltar Carneiro de Albuquerque
+                    </h3>
+                    <p class="text-xs font-semibold uppercase tracking-wider text-[#d97706] mb-6 mt-auto">
+                        Coordenadora e Pesquisadora
+                    </p>
+                    <!-- Redes Sociais -->
+                    <div class="flex items-center gap-2 pt-4 border-t border-[#1e110a]/10 w-full justify-center">
+                        <a href="#" class="w-8 h-8 rounded-full bg-[#1e110a]/5 hover:bg-[#d97706] hover:text-white flex items-center justify-center text-xs font-medium transition-colors duration-200" aria-label="Instagram">ig</a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-[#1e110a]/5 hover:bg-[#d97706] hover:text-white flex items-center justify-center text-xs font-medium transition-colors duration-200" aria-label="Facebook">f</a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-[#1e110a]/5 hover:bg-[#d97706] hover:text-white flex items-center justify-center text-xs font-medium transition-colors duration-200" aria-label="LinkedIn">in</a>
+                    </div>
+                </div>
+
+                <!-- Card 2 — Pesquisadora -->
+                <div class="group relative bg-[#fdf8f5] border border-[#1e110a]/10 rounded-2xl p-6 flex flex-col items-center text-center shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                    <div class="w-24 h-24 rounded-xl bg-gradient-to-br from-[#d97706] to-[#b45309] text-white flex items-center justify-center text-2xl font-bold tracking-widest shadow-md mb-5 group-hover:scale-105 transition-transform duration-300" style="font-family: 'Jackson Xilogravura';">
+                        BF
+                    </div>
+                    <h3 class="text-base font-bold text-[#1e110a] mb-2 leading-snug">
+                        Profa. Dra. Bernardina Maria Juvenal Freire de Oliveira <span class="text-xs text-[#d97706] font-normal">(UFPB)</span>
+                    </h3>
+                    <p class="text-xs font-semibold uppercase tracking-wider text-[#d97706] mb-6 mt-auto">
+                        Pesquisadora
+                    </p>
+                    <div class="flex items-center gap-2 pt-4 border-t border-[#1e110a]/10 w-full justify-center">
+                        <a href="#" class="w-8 h-8 rounded-full bg-[#1e110a]/5 hover:bg-[#d97706] hover:text-white flex items-center justify-center text-xs font-medium transition-colors duration-200" aria-label="Instagram">ig</a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-[#1e110a]/5 hover:bg-[#d97706] hover:text-white flex items-center justify-center text-xs font-medium transition-colors duration-200" aria-label="Facebook">f</a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-[#1e110a]/5 hover:bg-[#d97706] hover:text-white flex items-center justify-center text-xs font-medium transition-colors duration-200" aria-label="LinkedIn">in</a>
+                    </div>
+                </div>
+
+                <!-- Card 3 — Pesquisadora -->
+                <div class="group relative bg-[#fdf8f5] border border-[#1e110a]/10 rounded-2xl p-6 flex flex-col items-center text-center shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                    <div class="w-24 h-24 rounded-xl bg-gradient-to-br from-[#d97706] to-[#b45309] text-white flex items-center justify-center text-2xl font-bold tracking-widest shadow-md mb-5 group-hover:scale-105 transition-transform duration-300" style="font-family: 'Jackson Xilogravura';">
+                        GN
+                    </div>
+                    <h3 class="text-base font-bold text-[#1e110a] mb-2 leading-snug">
+                        Profa. Dra. Geysa Flávia Câmara de Lima Nascimento <span class="text-xs text-[#d97706] font-normal">(UFPB)</span>
+                    </h3>
+                    <p class="text-xs font-semibold uppercase tracking-wider text-[#d97706] mb-6 mt-auto">
+                        Pesquisadora
+                    </p>
+                    <div class="flex items-center gap-2 pt-4 border-t border-[#1e110a]/10 w-full justify-center">
+                        <a href="#" class="w-8 h-8 rounded-full bg-[#1e110a]/5 hover:bg-[#d97706] hover:text-white flex items-center justify-center text-xs font-medium transition-colors duration-200" aria-label="Instagram">ig</a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-[#1e110a]/5 hover:bg-[#d97706] hover:text-white flex items-center justify-center text-xs font-medium transition-colors duration-200" aria-label="Facebook">f</a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-[#1e110a]/5 hover:bg-[#d97706] hover:text-white flex items-center justify-center text-xs font-medium transition-colors duration-200" aria-label="LinkedIn">in</a>
+                    </div>
+                </div>
+
+                <!-- Card 4 — Pesquisadora -->
+                <div class="group relative bg-[#fdf8f5] border border-[#1e110a]/10 rounded-2xl p-6 flex flex-col items-center text-center shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                    <div class="w-24 h-24 rounded-xl bg-gradient-to-br from-[#d97706] to-[#b45309] text-white flex items-center justify-center text-2xl font-bold tracking-widest shadow-md mb-5 group-hover:scale-105 transition-transform duration-300" style="font-family: 'Jackson Xilogravura';">
+                        RF
+                    </div>
+                    <h3 class="text-base font-bold text-[#1e110a] mb-2 leading-snug">
+                        Profa. Dra. Raimunda Fernanda dos Santos <span class="text-xs text-[#d97706] font-normal">(UFRN)</span>
+                    </h3>
+                    <p class="text-xs font-semibold uppercase tracking-wider text-[#d97706] mb-6 mt-auto">
+                        Pesquisadora
+                    </p>
+                    <div class="flex items-center gap-2 pt-4 border-t border-[#1e110a]/10 w-full justify-center">
+                        <a href="#" class="w-8 h-8 rounded-full bg-[#1e110a]/5 hover:bg-[#d97706] hover:text-white flex items-center justify-center text-xs font-medium transition-colors duration-200" aria-label="Instagram">ig</a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-[#1e110a]/5 hover:bg-[#d97706] hover:text-white flex items-center justify-center text-xs font-medium transition-colors duration-200" aria-label="Facebook">f</a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-[#1e110a]/5 hover:bg-[#d97706] hover:text-white flex items-center justify-center text-xs font-medium transition-colors duration-200" aria-label="LinkedIn">in</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+<!-- FOOTER / RODAPÉ EXCLUSIVO DO PROJETO -->
+  <footer class="w-full bg-[#1e110a] text-[#f2dacf] pt-16 pb-10 px-4 sm:px-6 md:px-16 border-t-2 border-[#f2dacf]/20 relative overflow-hidden">
+    <div class="max-w-6xl mx-auto space-y-16">
+      
+      <!-- 1. ÁREA DE APOIO E REALIZAÇÃO (Logos em Flexbox) -->
+      <div class="bg-[#f2dacf] text-[#1e110a] border-2 border-[#1e110a] p-8 shadow-[8px_8px_0px_0px_#d97706] transition-all duration-300">
+        <div class="text-center mb-8">
+          <span class="inline-block w-12 h-[2px] bg-[#d97706] mb-2"></span>
+          <h3 class="text-xl sm:text-2xl font-bold tracking-wider uppercase" style="font-family: 'Jackson Xilogravura';">
+            Apoio e Realização 
+          </h3>
+        </div>
+
+        <!-- Container das Logos em Flexbox Responsivo -->
+        <div class="flex flex-wrap items-center justify-center gap-8 md:gap-12 opacity-90">
+          <!-- Logo 1: CNPq -->
+          <div class="flex items-center justify-center p-2 transition-transform hover:scale-105">
+            <img src="../../frontend/public/images/CNPq.png" alt="CNPq" class="h-12 sm:h-14 md:h-16 w-auto object-contain">
+          </div>
+          <!-- Logo 2: ACVPB -->
+          <div class="flex items-center justify-center p-2 transition-transform hover:scale-105">
+            <img src="../../frontend/public/images/ACVPB.png" alt="ACVPB" class="h-12 sm:h-14 md:h-16 w-auto object-contain">
+          </div>
+          <!-- Logo 3: DCI UFPB -->
+          <div class="flex items-center justify-center p-2 transition-transform hover:scale-105">
+            <img src="../../frontend/public/images/DCI.png" alt="Departamento de Ciência da Informação UFPB" class="h-12 sm:h-14 md:h-16 w-auto object-contain">
+          </div>
+          <!-- Logo 4: PPGCI -->
+          <div class="flex items-center justify-center p-2 transition-transform hover:scale-105">
+            <img src="../../frontend/public/images/PPGCI.png" alt="PPGCI UFPB" class="h-12 sm:h-14 md:h-16 w-auto object-contain">
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. NAVEGAÇÃO E IDENTIDADE DO RODAPÉ -->
+      <div class="flex flex-col lg:flex-row items-center justify-between gap-8 pb-10 border-b border-[#f2dacf]/15 text-center lg:text-left">
+        
+        <!-- Identidade -->
+        <div class="space-y-2">
+          <h4 class="text-lg sm:text-xl font-bold tracking-wide text-[#f2dacf]" style="font-family: 'Jackson Xilogravura';">
+            Memórias das Poetisas da Literatura de Cordel
+          </h4>
+          <p class="text-xs text-[#f2dacf]/70 max-w-sm" style="font-family: 'Jackson Xilogravura';">
+            Preservando a voz, a força e a arte das mulheres no sertão e no Brasil.
+          </p>
+        </div>
+
+        <!-- Links de Navegação em Flex -->
+        <nav class="flex flex-wrap justify-center lg:justify-end items-center gap-6">
+          <a href="index.html" class="text-xs font-bold uppercase tracking-widest text-[#f2dacf] hover:text-[#d97706] transition-colors" style="font-family: 'Jackson Xilogravura';">
+            Início
+          </a>
+          <a href="sobre.html" class="text-xs font-bold uppercase tracking-widest text-[#f2dacf] hover:text-[#d97706] transition-colors" style="font-family: 'Jackson Xilogravura';">
+            Sobre
+          </a>
+          <a href="biografias.html" class="text-xs font-bold uppercase tracking-widest text-[#f2dacf] hover:text-[#d97706] transition-colors" style="font-family: 'Jackson Xilogravura';">
+            Biografias
+          </a>
+          <a href="contato.html" class="text-xs font-bold uppercase tracking-widest text-[#f2dacf] hover:text-[#d97706] transition-colors" style="font-family: 'Jackson Xilogravura';">
+            Contato
+          </a>
+        </nav>
+
+      </div>
+
+      <!-- 3. CRÉDITOS E DESENVOLVEDORES -->
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#f2dacf]/60" style="font-family: 'Jackson Xilogravura';">
+        
+            <!-- Copyright -->
+            <p>&copy; 2026 Memórias das Poetisas da Literatura de Cordel. Todos os direitos reservados.</p>
+
+            <!-- Créditos da Equipe de Desenvolvimento -->
+        <div class="flex flex-wrap items-center gap-3 sm:gap-4 bg-[#f2dacf]/10 border border-[#f2dacf]/30 px-4 py-2 text-[11px]" style="font-family: 'Jackson Xilogravura';">
+          <span class="text-[#d97706] font-bold">&lt;/&gt;</span>
+            
+          <div class="flex items-center gap-3">
+            <!-- Link Front-end -->
+            <a href="https://seu-portfolio-front.com" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1 hover:text-[#d97706] transition-colors">
+              <strong class="text-[#f2dacf]">Front:</strong>
+              <span>Anderson Matheus</span>
+            </a>
+
+            <span class="opacity-40">|</span>
+
+           <!-- Link Back-end -->
+            <a href="https://seu-portfolio-back.com" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1 hover:text-[#d97706] transition-colors">
+              <strong class="text-[#f2dacf]">Back:</strong>
+              <span>Miguel Barros</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+    <script src="../../src/javascript/header.js"></script>
+</body>
+</html>
