@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../output.css" rel="stylesheet" />
+    <title>Biografias</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="bg-[#f2dacf] text-[#1e110a] min-h-screen flex flex-col selection:bg-[#d97706] selection:text-white">
+
+    <!-- ========== NAVBAR ========== -->
+    <header class="p-2 w-full bg-[#f2dacf] border-b border-[#1e110a]/15 sticky top-0 z-50 backdrop-blur-md bg-opacity-90">
+
+        <!-- Menu Desktop -->
+        <div class="hidden md:flex justify-between items-center w-[70%] mx-auto">
+
+            <!-- Logo / Título -->
+            <a href="../../index.html" class="flex flex-col">
+                <h2 class="text-lg" style="font-family: 'Jackson Xilogravura'; font-display: swap">
+                    Memórias das Poetisas
+                </h2>
+                <p class="text-[10px] text-center font-semibold" style="font-family: 'Jackson Xilogravura'; font-display: swap">
+                    DA LITERATURA DE CORDEL
+                </p>
+            </a>
+
+            <!-- Navegação Desktop -->
+            <nav style="font-family: 'Jackson Xilogravura'; font-display: swap" class="hidden md:flex items-center gap-8">
+                <ul class="flex justify-center gap-5 text-sm">
+                    <li class="px-3 py-2 rounded-full transition-colors duration-300 hover:bg-white/60">
+                        <a href="../../index.html" class="text-xs font-bold uppercase tracking-widest text-[#1e110a]/80 hover:text-[#d97706] transition-colors py-2" style="font-family: 'Jackson Xilogravura'; font-display: swap">INÍCIO</a>
+                    </li>
+                    <li class="px-3 py-2 rounded-full transition-colors duration-300 hover:bg-white/60">
+                        <a href="sobre.html" class="text-xs font-bold uppercase tracking-widest text-[#1e110a]/80 hover:text-[#d97706] transition-colors py-2" style="font-family: 'Jackson Xilogravura'; font-display: swap">SOBRE</a>
+                    </li>
+                    <li class="px-3 py-2 rounded-full transition-colors duration-300 hover:bg-white/60">
+                        <a href="biografias.html" class="text-xs font-bold uppercase tracking-widest text-[#1e110a]/80 hover:text-[#d97706] transition-colors py-2" style="font-family: 'Jackson Xilogravura'; font-display: swap">BIOGRAFIAS</a>
+                    </li>
+                    <li class="px-3 py-2 rounded-full transition-colors duration-300 hover:bg-white/60">
+                        <a href="catalogo.html" class="text-xs font-bold uppercase tracking-widest text-[#1e110a]/80 hover:text-[#d97706] transition-colors py-2" style="font-family: 'Jackson Xilogravura'; font-display: swap">CATÁLOGO</a>
+                    </li>
+                    <li class="px-3 py-2 rounded-full transition-colors duration-300 hover:bg-white/60">
+                        <a href="contato.html" class="text-xs font-bold uppercase tracking-widest text-[#1e110a]/80 hover:text-[#d97706] transition-colors py-2" style="font-family: 'Jackson Xilogravura'; font-display: swap">CONTATO</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <!-- Cabeçalho Mobile -->
+        <div class="flex md:hidden justify-between items-center px-2">
+            <p class="text-xs font-semibold" style="font-family: 'Jackson Xilogravura'; font-display: swap">
+                Versos que eternizam a voz das mulheres
+            </p>
+
+            <!-- Botão Dropdown Mobile -->
+            <button id="menu-btn" class="flex flex-col gap-1.5 p-2" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
+                <span class="w-5 h-[1px] bg-current"></span>
+                <span class="w-5 h-[1px] bg-current"></span>
+                <span class="w-5 h-[1px] bg-current"></span>
+            </button>
+        </div>
+
+        <!-- Dropdown Mobile -->
+        <nav id="mobile-menu" class="hidden md:hidden mt-3" style="font-family: 'Jackson Xilogravura'; font-display: swap">
+            <ul class="flex flex-col text-center text-sm">
+                <li class="py-3"><a href="../../index.html">INÍCIO</a></li>
+                <li class="py-3"><a href="sobre.html">SOBRE</a></li>
+                <li class="py-3"><a href="biografias.html">BIOGRAFIAS</a></li>
+                <li class="py-3"><a href="catalogo.html">CATÁLOGO</a></li>
+                <li class="py-3"><a href="contato.html">CONTATO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ========== HERO BIOGRAFIAS ========== -->
+    <section class="relative overflow-hidden bg-[#f2dacf] py-20 px-6 sm:px-10 lg:px-20 border-b border-[#1e110a]/10">
+        <!-- Elementos Decorativos nas Pontas -->
+        <img src="../../frontend/public/images/siteWix9.png" alt="Decorativo Esquerda" class="absolute left-0 top-1/2 -translate-y-1/2 w-32 sm:w-48 opacity-20 pointer-events-none hidden sm:block">
+        <img src="../../frontend/public/images/siteWix14.png" alt="Decorativo Direita" class="absolute right-0 top-1/2 -translate-y-1/2 w-32 sm:w-48 opacity-20 pointer-events-none hidden sm:block">
+
+        <div class="relative z-10 max-w-4xl mx-auto text-center space-y-4">
+            <span class="text-xs sm:text-sm uppercase tracking-[0.3em] font-semibold text-[#d97706]" style="font-family: 'Jackson Xilogravura';">
+                Pioneiras da Poesia Popular
+            </span>
+            <h1 class="text-4xl sm:text-6xl font-bold tracking-tight text-[#1e110a]" style="font-family: 'Jackson Xilogravura';">
+                Vozes Femininas do Cordel
+            </h1>
+            <p class="text-base sm:text-lg text-[#1e110a]/80 font-medium max-w-2xl mx-auto leading-relaxed">
+                Um inventário afetivo e histórico dedicado a registrar as autoras que moldaram, rima a rima, o patrimônio poético da nossa cultura.
+            </p>
+        </div>
+    </section>
+
+    <!-- ========== FILTRO ALFABÉTICO ========== -->
+    <div class="sticky top-20 z-40 text-[#1e110a] py-3 px-4 overflow-x-auto scrollbar-none">
+        <div class="max-w-6xl mx-auto flex items-center justify-start md:justify-center gap-1 sm:gap-2 min-w-max" style="font-family: 'Jackson Xilogravura';">
+            <span class="text-xs uppercase tracking-widest text-[#d97706] mr-2 hidden sm:inline">Índice:</span>
+            
+            <a href="#letra-A" class="px-2.5 py-1 text-xs sm:text-sm font-bold rounded bg-[#d97706] text-white hover:bg-[#b45309] transition-colors">A</a>
+            <a href="#letra-B" class="px-2.5 py-1 text-xs sm:text-sm font-bold rounded hover:bg-[#d97706] hover:text-white transition-colors">B</a>
+            <a href="#letra-C" class="px-2.5 py-1 text-xs sm:text-sm font-bold rounded hover:bg-[#d97706] hover:text-white transition-colors">C</a>
+            <a href="#letra-D" class="px-2.5 py-1 text-xs sm:text-sm font-bold rounded hover:bg-[#d97706] hover:text-white transition-colors">D</a>
+            
+            <span class="px-2 py-1 text-xs opacity-40 cursor-not-allowed">E</span>
+            <span class="px-2 py-1 text-xs opacity-40 cursor-not-allowed">F</span>
+            <span class="px-2 py-1 text-xs opacity-40 cursor-not-allowed">G</span>
+            <span class="px-2 py-1 text-xs opacity-40 cursor-not-allowed">H</span>
+            <span class="px-2 py-1 text-xs opacity-40 cursor-not-allowed">I</span>
+
+            <a href="#letra-J" class="px-2.5 py-1 text-xs sm:text-sm font-bold rounded hover:bg-[#d97706] hover:text-white transition-colors">J</a>
+            
+            <span class="px-2 py-1 text-xs opacity-40 cursor-not-allowed">K</span>
+            <span class="px-2 py-1 text-xs opacity-40 cursor-not-allowed">L</span>
+
+            <a href="#letra-M" class="px-2.5 py-1 text-xs sm:text-sm font-bold rounded hover:bg-[#d97706] hover:text-white transition-colors">M</a>
+
+            <span class="px-2 py-1 text-xs opacity-40 cursor-not-allowed">N</span>
+            <span class="px-2 py-1 text-xs opacity-40 cursor-not-allowed">O</span>
+            <span class="px-2 py-1 text-xs opacity-40 cursor-not-allowed">P</span>
+            <span class="px-2 py-1 text-xs opacity-40 cursor-not-allowed">Q</span>
+            <span class="px-2 py-1 text-xs opacity-40 cursor-not-allowed">R</span>
+
+            <a href="#letra-S" class="px-2.5 py-1 text-xs sm:text-sm font-bold rounded hover:bg-[#d97706] hover:text-white transition-colors">S</a>
+
+            <span class="px-2 py-1 text-xs opacity-40 cursor-not-allowed">T</span>
+            <span class="px-2 py-1 text-xs opacity-40 cursor-not-allowed">U</span>
+            <span class="px-2 py-1 text-xs opacity-40 cursor-not-allowed">V</span>
+            <span class="px-2 py-1 text-xs opacity-40 cursor-not-allowed">W</span>
+            <span class="px-2 py-1 text-xs opacity-40 cursor-not-allowed">X</span>
+            <span class="px-2 py-1 text-xs opacity-40 cursor-not-allowed">Y</span>
+            <span class="px-2 py-1 text-xs opacity-40 cursor-not-allowed">Z</span>
+        </div>
+    </div>
+
+    <!-- ========== SEÇÃO PRINCIPAL DE BIOGRAFIAS ========== -->
+    <main class="flex-grow py-16 px-4 sm:px-8 lg:px-16 max-w-7xl mx-auto w-full space-y-16">
+
+        <!-- ———— LETRA A ———— -->
+        <section id="letra-A" class="scroll-mt-36 space-y-8">
+            <div class="flex items-center gap-4">
+                <span class="text-4xl font-bold text-[#d97706]" style="font-family: 'Jackson Xilogravura';">A</span>
+                <div class="h-[2px] flex-grow bg-[#1e110a]/20"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card Antônia Pessoa -->
+                <article class="group bg-[#fdf8f5] border border-[#1e110a]/15 rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="w-16 h-16 rounded-xl bg-gradient-to-br from-[#d97706] to-[#b45309] text-white flex items-center justify-center text-xl font-bold shadow-md group-hover:scale-110 transition-transform duration-300" style="font-family: 'Jackson Xilogravura';">
+                            AP
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-[#1e110a] group-hover:text-[#d97706] transition-colors leading-snug" style="font-family: 'Jackson Xilogravura';">
+                                Antônia Pessoa Magalhães
+                            </h3>
+                            <span class="text-xs font-semibold uppercase tracking-wider text-[#d97706]">Poetisa cordelista</span>
+                        </div>
+                        <p class="text-sm text-[#1e110a]/80 leading-relaxed">
+                            Autora de raízes paraibanas cujo trabalho se consagra na salvaguarda da métrica popular. Seus folhetos retratam o universo sertanejo através do protagonismo feminino.
+                        </p>
+                    </div>
+                    <button class="mt-6 w-full py-2.5 px-4 rounded-xl border border-[#1e110a]/20 text-xs font-bold uppercase tracking-wider text-[#1e110a] hover:bg-[#d97706] hover:text-white hover:border-[#d97706] transition-all duration-200" style="font-family: 'Jackson Xilogravura';">
+                        Saiba Mais
+                    </button>
+                </article>
+            </div>
+        </section>
+
+        <!-- ———— LETRA B ———— -->
+        <section id="letra-B" class="scroll-mt-36 space-y-8">
+            <div class="flex items-center gap-4">
+                <span class="text-4xl font-bold text-[#d97706]" style="font-family: 'Jackson Xilogravura';">B</span>
+                <div class="h-[2px] flex-grow bg-[#1e110a]/20"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card Benedita Silva -->
+                <article class="group bg-[#fdf8f5] border border-[#1e110a]/15 rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="w-16 h-16 rounded-xl bg-gradient-to-br from-[#d97706] to-[#b45309] text-white flex items-center justify-center text-xl font-bold shadow-md group-hover:scale-110 transition-transform duration-300" style="font-family: 'Jackson Xilogravura';">
+                            BS
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-[#1e110a] group-hover:text-[#d97706] transition-colors leading-snug" style="font-family: 'Jackson Xilogravura';">
+                                Benedita Silva de Azevedo
+                            </h3>
+                            <span class="text-xs font-semibold uppercase tracking-wider text-[#d97706]">Poetisa e educadora</span>
+                        </div>
+                        <p class="text-sm text-[#1e110a]/80 leading-relaxed">
+                            Mestra em utilizar a rima como ferramenta pedagógica. Transforma temas sociais e a conscientização de direitos em sextilhas marcantes no ambiente escolar.
+                        </p>
+                    </div>
+                    <button class="mt-6 w-full py-2.5 px-4 rounded-xl border border-[#1e110a]/20 text-xs font-bold uppercase tracking-wider text-[#1e110a] hover:bg-[#d97706] hover:text-white hover:border-[#d97706] transition-all duration-200" style="font-family: 'Jackson Xilogravura';">
+                        Saiba Mais
+                    </button>
+                </article>
+            </div>
+        </section>
+
+        <!-- ———— LETRA C ———— -->
+        <section id="letra-C" class="scroll-mt-36 space-y-8">
+            <div class="flex items-center gap-4">
+                <span class="text-4xl font-bold text-[#d97706]" style="font-family: 'Jackson Xilogravura';">C</span>
+                <div class="h-[2px] flex-grow bg-[#1e110a]/20"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card Clotilde Santa Cruz -->
+                <article class="group bg-[#fdf8f5] border border-[#1e110a]/15 rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="w-16 h-16 rounded-xl bg-gradient-to-br from-[#d97706] to-[#b45309] text-white flex items-center justify-center text-xl font-bold shadow-md group-hover:scale-110 transition-transform duration-300" style="font-family: 'Jackson Xilogravura';">
+                            CS
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-[#1e110a] group-hover:text-[#d97706] transition-colors leading-snug" style="font-family: 'Jackson Xilogravura';">
+                                Clotilde Santa Cruz Tavares
+                            </h3>
+                            <span class="text-xs font-semibold uppercase tracking-wider text-[#d97706]">Pioneira do cordel</span>
+                        </div>
+                        <p class="text-sm text-[#1e110a]/80 leading-relaxed">
+                            Vanguardista que desbravou a publicação feminina de folhetos em um cenário majoritariamente masculino, abrindo caminhos para as futuras gerações.
+                        </p>
+                    </div>
+                    <button class="mt-6 w-full py-2.5 px-4 rounded-xl border border-[#1e110a]/20 text-xs font-bold uppercase tracking-wider text-[#1e110a] hover:bg-[#d97706] hover:text-white hover:border-[#d97706] transition-all duration-200" style="font-family: 'Jackson Xilogravura';">
+                        Saiba Mais
+                    </button>
+                </article>
+
+                <!-- Card Creusa Meira -->
+                <article class="group bg-[#fdf8f5] border border-[#1e110a]/15 rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="w-16 h-16 rounded-xl bg-gradient-to-br from-[#d97706] to-[#b45309] text-white flex items-center justify-center text-xl font-bold shadow-md group-hover:scale-110 transition-transform duration-300" style="font-family: 'Jackson Xilogravura';">
+                            CM
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-[#1e110a] group-hover:text-[#d97706] transition-colors leading-snug" style="font-family: 'Jackson Xilogravura';">
+                                Creusa Meira
+                            </h3>
+                            <span class="text-xs font-semibold uppercase tracking-wider text-[#d97706]">Poetisa popular</span>
+                        </div>
+                        <p class="text-sm text-[#1e110a]/80 leading-relaxed">
+                            Com versos marcados pela oralidade autêntica do Nordeste, eternizou em folhetos o dia a dia, a religiosidade e as celebrações da sua gente.
+                        </p>
+                    </div>
+                    <button class="mt-6 w-full py-2.5 px-4 rounded-xl border border-[#1e110a]/20 text-xs font-bold uppercase tracking-wider text-[#1e110a] hover:bg-[#d97706] hover:text-white hover:border-[#d97706] transition-all duration-200" style="font-family: 'Jackson Xilogravura';">
+                        Saiba Mais
+                    </button>
+                </article>
+            </div>
+        </section>
+
+        <!-- ———— LETRA D ———— -->
+        <section id="letra-D" class="scroll-mt-36 space-y-8">
+            <div class="flex items-center gap-4">
+                <span class="text-4xl font-bold text-[#d97706]" style="font-family: 'Jackson Xilogravura';">D</span>
+                <div class="h-[2px] flex-grow bg-[#1e110a]/20"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card Dora Ribeiro -->
+                <article class="group bg-[#fdf8f5] border border-[#1e110a]/15 rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="w-16 h-16 rounded-xl bg-gradient-to-br from-[#d97706] to-[#b45309] text-white flex items-center justify-center text-xl font-bold shadow-md group-hover:scale-110 transition-transform duration-300" style="font-family: 'Jackson Xilogravura';">
+                            DR
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-[#1e110a] group-hover:text-[#d97706] transition-colors leading-snug" style="font-family: 'Jackson Xilogravura';">
+                                Dora Ribeiro
+                            </h3>
+                            <span class="text-xs font-semibold uppercase tracking-wider text-[#d97706]">Ativista e Cordelista</span>
+                        </div>
+                        <p class="text-sm text-[#1e110a]/80 leading-relaxed">
+                            Promotora cultural que une as vertentes clássicas da poesia metrificada com debates contemporâneos e dinamização de oficinas literárias.
+                        </p>
+                    </div>
+                    <button class="mt-6 w-full py-2.5 px-4 rounded-xl border border-[#1e110a]/20 text-xs font-bold uppercase tracking-wider text-[#1e110a] hover:bg-[#d97706] hover:text-white hover:border-[#d97706] transition-all duration-200" style="font-family: 'Jackson Xilogravura';">
+                        Saiba Mais
+                    </button>
+                </article>
+            </div>
+        </section>
+
+        <!-- ———— LETRA J ———— -->
+        <section id="letra-J" class="scroll-mt-36 space-y-8">
+            <div class="flex items-center gap-4">
+                <span class="text-4xl font-bold text-[#d97706]" style="font-family: 'Jackson Xilogravura';">J</span>
+                <div class="h-[2px] flex-grow bg-[#1e110a]/20"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card Josenir Amorim -->
+                <article class="group bg-[#fdf8f5] border border-[#1e110a]/15 rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="w-16 h-16 rounded-xl bg-gradient-to-br from-[#d97706] to-[#b45309] text-white flex items-center justify-center text-xl font-bold shadow-md group-hover:scale-110 transition-transform duration-300" style="font-family: 'Jackson Xilogravura';">
+                            JA
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-[#1e110a] group-hover:text-[#d97706] transition-colors leading-snug" style="font-family: 'Jackson Xilogravura';">
+                                Josenir Amorim Alves de Lacerda
+                            </h3>
+                            <span class="text-xs font-semibold uppercase tracking-wider text-[#d97706]">Poetisa e Pesquisadora</span>
+                        </div>
+                        <p class="text-sm text-[#1e110a]/80 leading-relaxed">
+                            Conecta a produção poética ao estudo acadêmico rigoroso, fortalecendo a catalogação e o resgate documental de autoras populares brasileiras.
+                        </p>
+                    </div>
+                    <button class="mt-6 w-full py-2.5 px-4 rounded-xl border border-[#1e110a]/20 text-xs font-bold uppercase tracking-wider text-[#1e110a] hover:bg-[#d97706] hover:text-white hover:border-[#d97706] transition-all duration-200" style="font-family: 'Jackson Xilogravura';">
+                        Saiba Mais
+                    </button>
+                </article>
+            </div>
+        </section>
+
+        <!-- ———— LETRA M ———— -->
+        <section id="letra-M" class="scroll-mt-36 space-y-8">
+            <div class="flex items-center gap-4">
+                <span class="text-4xl font-bold text-[#d97706]" style="font-family: 'Jackson Xilogravura';">M</span>
+                <div class="h-[2px] flex-grow bg-[#1e110a]/20"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card Maria das Neves -->
+                <article class="group bg-[#fdf8f5] border border-[#1e110a]/15 rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="w-16 h-16 rounded-xl bg-gradient-to-br from-[#d97706] to-[#b45309] text-white flex items-center justify-center text-xl font-bold shadow-md group-hover:scale-110 transition-transform duration-300" style="font-family: 'Jackson Xilogravura';">
+                            MN
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-[#1e110a] group-hover:text-[#d97706] transition-colors leading-snug" style="font-family: 'Jackson Xilogravura';">
+                                Maria das Neves Baptista Pimentel
+                            </h3>
+                            <span class="text-xs font-semibold uppercase tracking-wider text-[#d97706]">Marco Histórico</span>
+                        </div>
+                        <p class="text-sm text-[#1e110a]/80 leading-relaxed">
+                            Considerada a primeira mulher a publicar uma obra de cordel no Brasil sob pseudônimo, revolucionando a história da literatura de feira.
+                        </p>
+                    </div>
+                    <button class="mt-6 w-full py-2.5 px-4 rounded-xl border border-[#1e110a]/20 text-xs font-bold uppercase tracking-wider text-[#1e110a] hover:bg-[#d97706] hover:text-white hover:border-[#d97706] transition-all duration-200" style="font-family: 'Jackson Xilogravura';">
+                        Saiba Mais
+                    </button>
+                </article>
+            </div>
+        </section>
+
+        <!-- ———— LETRA S ———— -->
+        <section id="letra-S" class="scroll-mt-36 space-y-8">
+            <div class="flex items-center gap-4">
+                <span class="text-4xl font-bold text-[#d97706]" style="font-family: 'Jackson Xilogravura';">S</span>
+                <div class="h-[2px] flex-grow bg-[#1e110a]/20"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card Salete Maria -->
+                <article class="group bg-[#fdf8f5] border border-[#1e110a]/15 rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="w-16 h-16 rounded-xl bg-gradient-to-br from-[#d97706] to-[#b45309] text-white flex items-center justify-center text-xl font-bold shadow-md group-hover:scale-110 transition-transform duration-300" style="font-family: 'Jackson Xilogravura';">
+                            SM
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-[#1e110a] group-hover:text-[#d97706] transition-colors leading-snug" style="font-family: 'Jackson Xilogravura';">
+                                Salete Maria da Silva
+                            </h3>
+                            <span class="text-xs font-semibold uppercase tracking-wider text-[#d97706]">Poetisa e Jurista</span>
+                        </div>
+                        <p class="text-sm text-[#1e110a]/80 leading-relaxed">
+                            Jurista e cordelista que alia versos e cidadania, traduzindo conceitos de direito e garantias sociais para a linguagem popular.
+                        </p>
+                    </div>
+                    <button class="mt-6 w-full py-2.5 px-4 rounded-xl border border-[#1e110a]/20 text-xs font-bold uppercase tracking-wider text-[#1e110a] hover:bg-[#d97706] hover:text-white hover:border-[#d97706] transition-all duration-200" style="font-family: 'Jackson Xilogravura';">
+                        Saiba Mais
+                    </button>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER / RODAPÉ EXCLUSIVO DO PROJETO -->
+    <footer class="w-full bg-[#1e110a] text-[#f2dacf] pt-16 pb-10 px-4 sm:px-6 md:px-16 border-t-2 border-[#f2dacf]/20 relative overflow-hidden">
+        <div class="max-w-6xl mx-auto space-y-16">
+          
+          <!-- 1. ÁREA DE APOIO E REALIZAÇÃO (Logos em Flexbox) -->
+          <div class="bg-[#f2dacf] text-[#1e110a] border-2 border-[#1e110a] p-8 shadow-[8px_8px_0px_0px_#d97706] transition-all duration-300">
+            <div class="text-center mb-8">
+              <span class="inline-block w-12 h-[2px] bg-[#d97706] mb-2"></span>
+              <h3 class="text-xl sm:text-2xl font-bold tracking-wider uppercase" style="font-family: 'Jackson Xilogravura';">
+                Apoio e Realização 
+              </h3>
+            </div>
+
+            <!-- Container das Logos em Flexbox Responsivo -->
+            <div class="flex flex-wrap items-center justify-center gap-8 md:gap-12 opacity-90">
+              <!-- Logo 1: CNPq -->
+              <div class="flex items-center justify-center p-2 transition-transform hover:scale-105">
+                <img src="../../frontend/public/images/CNPq.png" alt="CNPq" class="h-12 sm:h-14 md:h-16 w-auto object-contain">
+              </div>
+              <!-- Logo 2: ACVPB -->
+              <div class="flex items-center justify-center p-2 transition-transform hover:scale-105">
+                <img src="../../frontend/public/images/ACVPB.png" alt="ACVPB" class="h-12 sm:h-14 md:h-16 w-auto object-contain">
+              </div>
+              <!-- Logo 3: DCI UFPB -->
+              <div class="flex items-center justify-center p-2 transition-transform hover:scale-105">
+                <img src="../../frontend/public/images/DCI.png" alt="Departamento de Ciência da Informação UFPB" class="h-12 sm:h-14 md:h-16 w-auto object-contain">
+              </div>
+              <!-- Logo 4: PPGCI -->
+              <div class="flex items-center justify-center p-2 transition-transform hover:scale-105">
+                <img src="../../frontend/public/images/PPGCI.png" alt="PPGCI UFPB" class="h-12 sm:h-14 md:h-16 w-auto object-contain">
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. NAVEGAÇÃO E IDENTIDADE DO RODAPÉ -->
+          <div class="flex flex-col lg:flex-row items-center justify-between gap-8 pb-10 border-b border-[#f2dacf]/15 text-center lg:text-left">
+            
+            <!-- Identidade -->
+            <div class="space-y-2">
+              <h4 class="text-lg sm:text-xl font-bold tracking-wide text-[#f2dacf]" style="font-family: 'Jackson Xilogravura';">
+                Memórias das Poetisas da Literatura de Cordel
+              </h4>
+              <p class="text-xs text-[#f2dacf]/70 max-w-sm" style="font-family: 'Jackson Xilogravura';">
+                Preservando a voz, a força e a arte das mulheres no sertão e no Brasil.
+              </p>
+            </div>
+
+            <!-- Links de Navegação em Flex -->
+            <nav class="flex flex-wrap justify-center lg:justify-end items-center gap-6">
+              <a href="../../index.html" class="text-xs font-bold uppercase tracking-widest text-[#f2dacf] hover:text-[#d97706] transition-colors" style="font-family: 'Jackson Xilogravura';">
+                Início
+              </a>
+              <a href="./sobre.html" class="text-xs font-bold uppercase tracking-widest text-[#f2dacf] hover:text-[#d97706] transition-colors" style="font-family: 'Jackson Xilogravura';">
+                Sobre
+              </a>
+              <a href="./biografias.html" class="text-xs font-bold uppercase tracking-widest text-[#f2dacf] hover:text-[#d97706] transition-colors" style="font-family: 'Jackson Xilogravura';">
+                Biografias
+              </a>
+              <a href="./contato.html" class="text-xs font-bold uppercase tracking-widest text-[#f2dacf] hover:text-[#d97706] transition-colors" style="font-family: 'Jackson Xilogravura';">
+                Contato
+              </a>
+            </nav>
+
+          </div>
+
+          <!-- 3. CRÉDITOS E DESENVOLVEDORES -->
+          <div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#f2dacf]/60" style="font-family: 'Jackson Xilogravura';">
+            
+                <!-- Copyright -->
+                <p>&copy; 2026 Memórias das Poetisas da Literatura de Cordel. Todos os direitos reservados.</p>
+
+                <!-- Créditos da Equipe de Desenvolvimento -->
+            <div class="flex flex-wrap items-center gap-3 sm:gap-4 bg-[#f2dacf]/10 border border-[#f2dacf]/30 px-4 py-2 text-[11px]" style="font-family: 'Jackson Xilogravura';">
+              <span class="text-[#d97706] font-bold">&lt;/&gt;</span>
+                
+              <div class="flex items-center gap-3">
+                <!-- Link Front-end -->
+                <a href="https://seu-portfolio-front.com" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1 hover:text-[#d97706] transition-colors">
+                  <strong class="text-[#f2dacf]">Front:</strong>
+                  <span>Anderson Matheus</span>
+                </a>
+
+                <span class="opacity-40">|</span>
+
+               <!-- Link Back-end -->
+                <a href="https://seu-portfolio-back.com" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1 hover:text-[#d97706] transition-colors">
+                  <strong class="text-[#f2dacf]">Back:</strong>
+                  <span>Miguel Barros</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </footer>
+    <script src="./javascript/header.js"></script>
+
+</body>
+</html>

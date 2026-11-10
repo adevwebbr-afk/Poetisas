@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Acervo digital de folhetos, capas e registros bibliográficos cadastrados no painel administrativo do projeto.">
+    <link href="../output.css" rel="stylesheet" />
+    <title>Catálogo — Memórias das Poetisas da Literatura de Cordel</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#f2dacf] text-[#1e110a] min-h-screen flex flex-col selection:bg-[#d97706] selection:text-white">
+
+    <!-- ========== NAVBAR ========== -->
+    <header class="p-2 w-full bg-[#f2dacf] border-b border-[#1e110a]/15 sticky top-0 z-50 backdrop-blur-md bg-opacity-90">
+
+        <!-- Menu Desktop -->
+        <div class="hidden md:flex justify-between items-center w-[70%] mx-auto">
+
+            <!-- Logo / Título -->
+            <a href="../../index.html" class="flex flex-col">
+                <h2 class="text-lg" style="font-family: 'Jackson Xilogravura'; font-display: swap">
+                    Memórias das Poetisas
+                </h2>
+                <p class="text-[10px] text-center font-semibold" style="font-family: 'Jackson Xilogravura'; font-display: swap">
+                    DA LITERATURA DE CORDEL
+                </p>
+            </a>
+
+            <!-- Navegação Desktop -->
+            <nav style="font-family: 'Jackson Xilogravura'; font-display: swap" class="hidden md:flex items-center gap-8">
+                <ul class="flex justify-center gap-5 text-sm">
+                    <li class="px-3 py-2 rounded-full transition-colors duration-300 hover:bg-white/60">
+                        <a href="../../index.html" class="text-xs font-bold uppercase tracking-widest text-[#1e110a]/80 hover:text-[#d97706] transition-colors py-2" style="font-family: 'Jackson Xilogravura'; font-display: swap">INÍCIO</a>
+                    </li>
+                    <li class="px-3 py-2 rounded-full transition-colors duration-300 hover:bg-white/60">
+                        <a href="sobre.html" class="text-xs font-bold uppercase tracking-widest text-[#1e110a]/80 hover:text-[#d97706] transition-colors py-2" style="font-family: 'Jackson Xilogravura'; font-display: swap">SOBRE</a>
+                    </li>
+                    <li class="px-3 py-2 rounded-full transition-colors duration-300 hover:bg-white/60">
+                        <a href="biografias.html" class="text-xs font-bold uppercase tracking-widest text-[#1e110a]/80 hover:text-[#d97706] transition-colors py-2" style="font-family: 'Jackson Xilogravura'; font-display: swap">BIOGRAFIAS</a>
+                    </li>
+                    <li class="px-3 py-2 rounded-full transition-colors duration-300 hover:bg-white/60">
+                        <a href="catalogo.html" class="text-xs font-bold uppercase tracking-widest text-[#1e110a]/80 hover:text-[#d97706] transition-colors py-2" style="font-family: 'Jackson Xilogravura'; font-display: swap">CATÁLOGO</a>
+                    </li>
+                    <li class="px-3 py-2 rounded-full transition-colors duration-300 hover:bg-white/60">
+                        <a href="contato.html" class="text-xs font-bold uppercase tracking-widest text-[#1e110a]/80 hover:text-[#d97706] transition-colors py-2" style="font-family: 'Jackson Xilogravura'; font-display: swap">CONTATO</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <!-- Cabeçalho Mobile -->
+        <div class="flex md:hidden justify-between items-center px-2">
+            <p class="text-xs font-semibold" style="font-family: 'Jackson Xilogravura'; font-display: swap">
+                Versos que eternizam a voz das mulheres
+            </p>
+
+            <!-- Botão Dropdown Mobile -->
+            <button id="menu-btn" class="flex flex-col gap-1.5 p-2" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
+                <span class="w-5 h-[1px] bg-current"></span>
+                <span class="w-5 h-[1px] bg-current"></span>
+                <span class="w-5 h-[1px] bg-current"></span>
+            </button>
+        </div>
+
+        <!-- Dropdown Mobile -->
+        <nav id="mobile-menu" class="hidden md:hidden mt-3" style="font-family: 'Jackson Xilogravura'; font-display: swap">
+            <ul class="flex flex-col text-center text-sm">
+                <li class="py-3"><a href="../../index.html">INÍCIO</a></li>
+                <li class="py-3"><a href="sobre.html">SOBRE</a></li>
+                <li class="py-3"><a href="biografias.html">BIOGRAFIAS</a></li>
+                <li class="py-3"><a href="catalogo.html">CATÁLOGO</a></li>
+                <li class="py-3"><a href="contato.html">CONTATO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="conteudo" class="flex-grow">
+
+        <!-- ================= HERO EXATO CONFORME A IMAGEM REFERÊNCIA ================= -->
+        <section class="relative overflow-hidden bg-[#fbf6f0] py-16 px-6 sm:px-10 lg:px-20 border-b border-[#1e110a]/15">
+            <div class="max-w-7xl mx-auto flex flex-col md:flex-row md:items-end justify-between gap-8">
+                
+                <!-- Título e Eyebrow à esquerda -->
+                <div class="space-y-3">
+                    <div class="flex items-center gap-3">
+                        <span class="inline-block w-8 h-[2px] bg-[#d97706]"></span>
+                        <span class="text-xs uppercase tracking-[0.25em] font-bold text-[#d97706]" style="font-family: 'Jackson Xilogravura';">
+                            Acervo de obras
+                        </span>
+                    </div>
+                    <h1 class="text-5xl sm:text-7xl font-bold tracking-tight text-[#1e110a]" style="font-family: 'Jackson Xilogravura';">
+                        Catálogo
+                    </h1>
+                </div>
+
+                <!-- Descrição à direita -->
+                <div class="max-w-md">
+                    <p class="text-sm sm:text-base text-[#1e110a]/85 leading-relaxed font-medium">
+                        Folhetos de cordel reunidos a partir das capas cadastradas no acervo. Autor, título e edição aparecem em destaque; os demais dados completam a ficha de cada obra.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ================= SEÇÃO DE CONTEÚDO DINÂMICO (BANCO / ADMIN) ================= -->
+        <section class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto space-y-8">
+            
+            <!-- Status de Leitura / Feedback (Controlado pelo script.js / API do admin) -->
+            <div class="border-b border-[#1e110a]/15 pb-4">
+                <p class="text-xs font-bold uppercase tracking-widest text-[#d97706]" data-obras-status="" aria-live="polite">Nenhuma obra catalogada ainda.</p>
+            </div>
+
+            <!-- Grid onde a API injetará dinamicamente os cards das obras vindas do Admin/Banco -->
+            <!-- Quando houver itens, o script remove o 'hidden' e preenche os cards com as imagens e dados -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 obra-grid" data-obra-grid="" hidden=""></div>
+
+            <!-- Estado Vazio (Visual idêntico ao solicitado, exibido se o banco estiver vazio) -->
+            <div class="state-panel bg-transparent border-2 border-dashed border-[#1e110a]/30 rounded-xl p-16 text-center max-w-4xl mx-auto my-8 shadow-sm" data-obras-empty="">
+                <h3 class="text-2xl sm:text-3xl font-bold text-[#1e110a] mb-3" style="font-family: 'Jackson Xilogravura';">
+                    Nenhuma obra catalogada ainda
+                </h3>
+                <p class="text-sm sm:text-base text-[#1e110a]/75 max-w-md mx-auto leading-relaxed">
+                    As capas e os dados bibliográficos cadastrados no painel administrativo aparecerão aqui.
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ================= RODAPÉ OFICIAL DO PROJETO ================= -->
+    <footer class="w-full bg-[#1e110a] text-[#fbf6f0] pt-16 pb-10 px-4 sm:px-6 md:px-16 border-t-2 border-[#fbf6f0]/20 relative overflow-hidden">
+        <div class="max-w-6xl mx-auto space-y-16">
+          
+            <!-- 1. Apoio e Realização (Logos) -->
+            <div class="bg-[#fbf6f0] text-[#1e110a] border-2 border-[#1e110a] p-8 shadow-[8px_8px_0px_0px_#d97706] transition-all duration-300">
+                <div class="text-center mb-8">
+                    <span class="inline-block w-12 h-[2px] bg-[#d97706] mb-2"></span>
+                    <h3 class="text-xl sm:text-2xl font-bold tracking-wider uppercase" style="font-family: 'Jackson Xilogravura';">
+                        Apoio e Realização 
+                    </h3>
+                </div>
+
+                <div class="flex flex-wrap items-center justify-center gap-8 md:gap-12 opacity-90">
+                    <!-- Logo 1: CNPq -->
+                    <div class="flex items-center justify-center p-2 transition-transform hover:scale-105">
+                        <img src="../../frontend/public/images/CNPq.png" alt="CNPq" class="h-12 sm:h-14 md:h-16 w-auto object-contain">
+                    </div>
+                    <!-- Logo 2: ACVPB -->
+                    <div class="flex items-center justify-center p-2 transition-transform hover:scale-105">
+                        <img src="../../frontend/public/images/ACVPB.png" alt="ACVPB" class="h-12 sm:h-14 md:h-16 w-auto object-contain">
+                    </div>
+                    <!-- Logo 3: DCI UFPB -->
+                    <div class="flex items-center justify-center p-2 transition-transform hover:scale-105">
+                        <img src="../../frontend/public/images/DCI.png" alt="Departamento de Ciência da Informação UFPB" class="h-12 sm:h-14 md:h-16 w-auto object-contain">
+                    </div>
+                    <!-- Logo 4: PPGCI -->
+                    <div class="flex items-center justify-center p-2 transition-transform hover:scale-105">
+                        <img src="../../frontend/public/images/PPGCI.png" alt="PPGCI UFPB" class="h-12 sm:h-14 md:h-16 w-auto object-contain">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Navegação do Rodapé -->
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-8 pb-10 border-b border-[#fbf6f0]/15 text-center lg:text-left">
+                <div class="space-y-2">
+                    <h4 class="text-lg sm:text-xl font-bold tracking-wide text-[#fbf6f0]" style="font-family: 'Jackson Xilogravura';">
+                        Memórias das Poetisas da Literatura de Cordel
+                    </h4>
+                    <p class="text-xs text-[#fbf6f0]/70 max-w-sm">
+                        Acervo digital de referência sobre a produção poética feminina na literatura de cordel brasileira.
+                    </p>
+                </div>
+
+                <nav class="flex flex-wrap justify-center lg:justify-end items-center gap-6" style="font-family: 'Jackson Xilogravura';">
+                    <a href="index.html" class="text-xs font-bold uppercase tracking-widest text-[#fbf6f0] hover:text-[#d97706] transition-colors">Início</a>
+                    <a href="sobre.html" class="text-xs font-bold uppercase tracking-widest text-[#fbf6f0] hover:text-[#d97706] transition-colors">Sobre</a>
+                    <a href="biografias.html" class="text-xs font-bold uppercase tracking-widest text-[#fbf6f0] hover:text-[#d97706] transition-colors">Biografias</a>
+                    <a href="catalogo.html" class="text-xs font-bold uppercase tracking-widest text-[#d97706] transition-colors">Catálogo</a>
+                    <a href="contato.html" class="text-xs font-bold uppercase tracking-widest text-[#fbf6f0] hover:text-[#d97706] transition-colors">Contato</a>
+                    <a href="admin.html" class="text-xs font-bold uppercase tracking-widest text-[#fbf6f0]/60 hover:text-[#d97706] transition-colors">Painel adm</a>
+                </nav>
+            </div>
+
+            <!-- 3. Créditos da Equipe -->
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#fbf6f0]/60">
+                <p>&copy; <span data-current-year="">2026</span> Memórias das Poetisas da Literatura de Cordel. Todos os direitos reservados.</p>
+
+                <div class="flex flex-wrap items-center gap-3 sm:gap-4 bg-[#fbf6f0]/10 border border-[#fbf6f0]/30 px-4 py-2 text-[11px]" style="font-family: 'Jackson Xilogravura';">
+                    <span class="text-[#d97706] font-bold">&lt;/&gt;</span>
+                    
+                    <div class="flex items-center gap-3">
+                        <a href="https://portsamuellmsa.vercel.app/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1 hover:text-[#d97706] transition-colors">
+                            <strong class="text-[#fbf6f0]">Dev:</strong>
+                            <span>Samuel Lucas</span>
+                        </a>
+
+                        <span class="opacity-40">|</span>
+
+                        <a href="https://miguel-fernandes-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1 hover:text-[#d97706] transition-colors">
+                            <strong class="text-[#fbf6f0]">Dev:</strong>
+                            <span>Miguel Fernandes</span>
+                        </a>
+
+                        <span class="opacity-40">|</span>
+
+                        <span class="text-[#d97706]">
+                            <strong>Jackson</strong> <span class="text-[10px] opacity-80">(Design)</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center text-[11px] text-[#fbf6f0]/40 uppercase tracking-widest pt-2">
+                Projeto acadêmico da UFPB · PPGCi
+            </div>
+        </div>
+    </footer>
+
+    <noscript>
+        <div class="fixed bottom-0 left-0 w-full bg-[#d97706] text-white p-3 text-center font-bold z-50 shadow-lg">
+            Este catálogo precisa de JavaScript ativado para exibir as obras cadastradas.
+        </div>
+    </noscript>
+
+    <!-- Scripts de Integração com o Banco/Admin -->
+    <script src="./javascript/header.js"></script>
+</body>
+</html>
